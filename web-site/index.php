@@ -58,7 +58,8 @@
         
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a> </div>
+          <a class="navbar-brand" href="index.html"><h1><img src="images/logo.png" height="80px" alt=""></a>
+            <span class="finewide_medium_white" style="color: white"> StandupIndians.com</span></h1></div>
         
         <!-- Collect the nav links, forms, and other content for toggling -->
         
