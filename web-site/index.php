@@ -869,10 +869,7 @@
               <div class="col-xs-12 col-sm-2"><img src="images/clients/client_05.jpg" alt="Client" height="98" width="208"></div>
               <div class="col-xs-12 col-sm-2"><img src="images/clients/client_06.jpg" alt="Client" height="98" width="208"></div>
               <div class="col-xs-12 col-sm-2"><img src="images/ashok-stambh-english.png" alt="Client" height="98" width="208"></div>
-              <div class="col-xs-12 col-sm-2"><img src="images/ibalogo.png" alt="Client" height="98" width="208"></div>
-              <div class="col-xs-12 col-sm-2"><img src="images/mudra-logo.jpg" alt="Client" height="98" width="208"></div>
-              <div class="col-xs-12 col-sm-2"><img src="images/sidbiloanlogo.gif" alt="Client" height="98" width="208"></div>
-              <div class="col-xs-12 col-sm-2"><img src="images/standuplogo.gif" alt="Client" height="98" width="208"></div>
+
               <!--<div class="col-xs-12 col-sm-2"><img src="images/clients/client_12.jpg" alt="Client" height="98" width="208"></div>-->
             </div>
           </div>
