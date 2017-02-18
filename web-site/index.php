@@ -2,7 +2,7 @@
 
 <html lang="en" class="no-js">
 <head>
-<title>Finance - HTML 5 Template</title>
+<title>Standup Indias|Start Business|Grow Business|Scale Business</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -37,7 +37,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-7 pull-right text-right">
-              <p> <span><span class="icon icon-Phone2"></span>1234 - 5678 - 9012</span> <span><span class="icon icon-Mail"></span>support@finance.com</span> <span><span class="icon icon-Timer"></span>Mon - Sat 9:00 - 19:00</span> </p>
+              <p> <span><span class="icon icon-Phone2"></span>9811669606 / 9899120768</span> <span><span class="icon icon-Mail"></span>support@standupindias.com</span> <span><span class="icon icon-Timer"></span>Mon - Sat 9:00 - 19:00</span> </p>
             </div>
             <div class="col-md-5">
               <ul class="social-icons">
@@ -65,12 +65,12 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a class="active" href="index.html">Home</a> </li>
-            <li class="drop"><a href="about.html">About</a>
-              <ul class="dropdown">
+            <li class="drop"><a href="team.html">About</a>
+             <!-- <ul class="dropdown">
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="team.html">Team</a></li>
                 <li><a href="404-error.html">Error 404 Page</a></li>
-              </ul>
+              </ul>-->
             </li>
             <li class="drop"><a href="services.html">Our Services</a>
               <ul class="dropdown">
@@ -82,25 +82,25 @@
                 <li><a href="mutual.html">Mutual Funds</a></li>
               </ul>
             </li>
-            <li class="drop"><a href="shop-page.html">Shop</a>
+            <!--<li class="drop"><a href="shop-page.html">Shop</a>
               <ul class="dropdown">
                 <li><a href="product-details.html">Product Details</a></li>
                 <li><a href="cart-page.html">Cart Page</a></li>
                 <li><a href="checkout-page.html">Checkout Page</a></li>
               </ul>
-            </li>
-            <li class="drop"><a href="gallery.html">Gallery</a>
+            </li>-->
+            <!--<li class="drop"><a href="gallery.html">Gallery</a>
               <ul class="dropdown">
                 <li><a href="gallery-2col.html">Gallery 2 Colums</a></li>
                 <li><a href="gallery-3col.html">Gallery 3 Colums</a></li>
                 <li><a href="gallery.html">Gallery 4 Colums</a></li>
               </ul>
-            </li>
-            <li class="drop"><a href="blog.html">Blog</a>
-              <ul class="dropdown">
+            </li>-->
+            <li class="drop"><a href="blog/">Blog</a>
+              <!--<ul class="dropdown">
                 <li><a href="blog.html">Blog Default</a></li>
                 <li><a href="single-post.html">Single Post</a></li>
-              </ul>
+              </ul>-->
             </li>
             <li><a href="contact.html">Contact</a></li>
             <li class="search drop"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
@@ -177,7 +177,7 @@
 
 								data-endelementdelay="0.1"
 
-								style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">finance SERVICE<br>
+								style="z-index: 8; max-width: auto; max-height: auto; white-space: nowrap;">finance Support <br>
               <span>PROVIDERS</span> <br>
             </div>
             
@@ -205,9 +205,9 @@
 
 								data-endelementdelay="0.1"
 
-								style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">Lorem ipsum dolor sit amet, consectetur <br>
-              adipisicing elit, sed do eiusmod tempor incididunt ut<br>
-              labore et dolore magna aliqua. Ut enim ad minim veniam. </div>
+								style="z-index: 7; max-width: auto; max-height: auto; white-space: nowrap;">We provide every bit of support from <br>
+              funding your business, we have collaboration with<br>
+              Govt. Financial Institutes, Banks and other private investors . </div>
             
             <!-- LAYER NR. 3 -->
             
@@ -415,15 +415,15 @@
       <div class="top-info">
         <div class="icon-box"> <span class=" icon icon-Pointer"></span> </div>
         <div class="content-box">
-          <p> 13005 Greenville Avenue <br>
-            <span>California, TX 70240</span></p>
+          <p> Defence Colony <br>
+            <span>Delhi, India</span></p>
         </div>
       </div>
       <div class="top-info">
         <div class="icon-box"> <span class="separator icon icon-Phone2"></span> </div>
         <div class="content-box">
-          <p>+ (1800) 456 7890 <br>
-            <span>info@.finance.com</span></p>
+          <p>9811669606 / 9899120768 <br>
+            <span>info@standupindians.com</span></p>
         </div>
       </div>
       <div class="top-info">
@@ -448,19 +448,15 @@
         <div class="col-md-12">
           <div class="project-title title"> <span class="sm-title">We are expert in</span>
             <h2 class="box-header">OUR SERVICES</h2>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-              
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>While into any service our target is to provide you service with in short interval of time</p>
           </div>
           <div class="tg-service services-content tg-haslayout col-md-4 ">
             <div class="tg-border-topleft tg-haslayout">
               <div class="tg-displaytable">
                 <div class="tg-displaytablecell"> <span class="icons"><img src="images/icon1.png" alt=""></span>
-                  <h3>Financial Planning</h3>
+                  <h3>MSME Registration : ( Micro,Small & Medium Enterprises )</h3>
                   <div class="tg-description">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                    <p>In India, SME’s aren’t aware of importance of getting themselves registered under MSME. It creates lots of opportunites & remain connected to various benefits provided by Ministry of MSME from time to time. </p>
                   </div>
                   <br>
                 </div>
@@ -471,9 +467,9 @@
             <div class="tg-border-topleft tg-haslayout">
               <div class="tg-displaytable">
                 <div class="tg-displaytablecell"> <span class="icons"><img src="images/icon2.png" alt=""></span>
-                  <h3>Investment</h3>
+                  <h3>NSIC Or GP Registration  :  ( National Small Industries Corporation )</h3>
                   <div class="tg-description">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                    <p>NSIC helps MSME units in promoting, aiding and growing them at faster pace. They provides the below mentioned benefits</p>
                   </div>
                   <br>
                 </div>
@@ -484,15 +480,28 @@
             <div class="tg-border-topleft tg-haslayout">
               <div class="tg-displaytable">
                 <div class="tg-displaytablecell"> <span class="icons"><img src="images/icon3.png" alt=""></span>
-                  <h3>Mutual Funds</h3>
+                  <h3>StandUp Mitra Scheme</h3>
                   <div class="tg-description">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                    <p>It's a Dream Project of our Hon’ble Prime Minister of India Shri Narendra Modi wherein MSME’s can facilitates Bank loans between INR 10 Lac - 1Cr for setting up Green Field Enterprises. This Scheme is For Women Borrower with Minimum 51% stake Or Scheduled Caste (SC) Or Scheduled Tribes (ST).</p>
                   </div>
                   <br>
                 </div>
               </div>
             </div>
           </div>
+            <div class="tg-service services-content tg-haslayout col-md-4">
+                <div class="tg-border-topleft tg-haslayout">
+                    <div class="tg-displaytable">
+                        <div class="tg-displaytablecell"> <span class="icons"><img src="images/icon2.png" alt=""></span>
+                            <h3>CRISIL Rating</h3>
+                            <div class="tg-description">
+                                <p>Crisil is India's No.1 Rating agent wherein Standard & Poor which is World No 1 Rating agency has 67% stake in it.</p>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
     </div>
@@ -543,7 +552,8 @@
           <div class="project-title title title2">
             <h2 class="box-header">Who we are ?</h2>
           </div>
-          <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>We are Group of people from different businesses like Banking, Govt. & Technology. Who auth to provide faster
+              Business Funding for individual & the companies.</p>
           <div class="tl-spoiler col-md-6 pad0">
             <h6 class="ok-icon"> <i class="fa fa-bullhorn" aria-hidden="true"></i> &nbsp; &nbsp; WE ARE PASSIONATE</h6>
           </div>
@@ -679,17 +689,17 @@
             <li>
               <h2>John Smith</h2>
               <span>Chief Director</span>
-              <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.</p>
+              <p>StandupIndian Support helped my business to grow faster</p>
             </li>
             <li>
               <h2>Franz Auer</h2>
               <span>Project Menager</span>
-              <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </p>
+              <p>There collaboration helped my decision making to be more correct.  </p>
             </li>
             <li>
-              <h2>Tobias Steiner</h2>
+              <h2>Sumit Jain</h2>
               <span>Electricity Engineer</span>
-              <p>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. </p>
+              <p>They helped me to start my own plant in very small time. </p>
             </li>
           </ul>
         </div>
@@ -749,7 +759,7 @@
   <!-- news-section 
 
 			================================================== -->
-  
+  <?php /*
   <section class="news-section news-section-home">
     <div class="container">
       <div class="project-title title"> <span class="sm-title">Latest updates</span>
@@ -826,7 +836,7 @@
       </div>
     </div>
   </section>
-  
+    */ ?>
   <!-- End news section --> 
   
   <!-- clients-section 
@@ -847,18 +857,23 @@
         <div class="textwidget">
           <div class="logo-panel">
             <div class="row">
+                <div class="col-xs-12 col-sm-2"><img src="images/ashok-stambh-english.png" alt="Client" height="98" width="208"></div>
+                <div class="col-xs-12 col-sm-2"><img src="images/ibalogo.png" alt="Client" height="98" width="208"></div>
+                <div class="col-xs-12 col-sm-2"><img src="images/mudra-logo.jpg" alt="Client" height="98" width="208"></div>
+                <div class="col-xs-12 col-sm-2"><img src="images/sidbiloanlogo.gif" alt="Client" height="98" width="208"></div>
+                <div class="col-xs-12 col-sm-2"><img src="images/standuplogo.gif" alt="Client" height="98" width="208"></div>
               <div class="col-xs-12 col-sm-2"><img src="images/clients/client_01.jpg" alt="Client" height="98" width="208"></div>
               <div class="col-xs-12 col-sm-2"><img src="images/clients/client_02.jpg" alt="Client" height="98" width="208"></div>
               <div class="col-xs-12 col-sm-2"><img src="images/clients/client_03.jpg" alt="Client" height="98" width="208"></div>
               <div class="col-xs-12 col-sm-2"><img src="images/clients/client_04.jpg" alt="Client" height="98" width="208"></div>
               <div class="col-xs-12 col-sm-2"><img src="images/clients/client_05.jpg" alt="Client" height="98" width="208"></div>
               <div class="col-xs-12 col-sm-2"><img src="images/clients/client_06.jpg" alt="Client" height="98" width="208"></div>
-              <div class="col-xs-12 col-sm-2"><img src="images/clients/client_07.jpg" alt="Client" height="98" width="208"></div>
-              <div class="col-xs-12 col-sm-2"><img src="images/clients/client_08.jpg" alt="Client" height="98" width="208"></div>
-              <div class="col-xs-12 col-sm-2"><img src="images/clients/client_09.jpg" alt="Client" height="98" width="208"></div>
-              <div class="col-xs-12 col-sm-2"><img src="images/clients/client_10.jpg" alt="Client" height="98" width="208"></div>
-              <div class="col-xs-12 col-sm-2"><img src="images/clients/client_11.jpg" alt="Client" height="98" width="208"></div>
-              <div class="col-xs-12 col-sm-2"><img src="images/clients/client_12.jpg" alt="Client" height="98" width="208"></div>
+              <div class="col-xs-12 col-sm-2"><img src="images/ashok-stambh-english.png" alt="Client" height="98" width="208"></div>
+              <div class="col-xs-12 col-sm-2"><img src="images/ibalogo.png" alt="Client" height="98" width="208"></div>
+              <div class="col-xs-12 col-sm-2"><img src="images/mudra-logo.jpg" alt="Client" height="98" width="208"></div>
+              <div class="col-xs-12 col-sm-2"><img src="images/sidbiloanlogo.gif" alt="Client" height="98" width="208"></div>
+              <div class="col-xs-12 col-sm-2"><img src="images/standuplogo.gif" alt="Client" height="98" width="208"></div>
+              <!--<div class="col-xs-12 col-sm-2"><img src="images/clients/client_12.jpg" alt="Client" height="98" width="208"></div>-->
             </div>
           </div>
         </div>
@@ -904,9 +919,8 @@
           <div class="col-md-3">
             <div class="footer-widget">
               <h2>About Us</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod
-                
-                tempor incididunt ut labore et dolore magna.</p>
+              <p>We are Group of people from different businesses like Banking, Govt. & Technology. Who auth to provide faster
+                  Business Funding for individual & the companies.</p>
               <ul class="social-links social-links_mod-a list-inline">
                 <li><a target="_blank" href="https://twitter.com/"><i class="icons fa fa-twitter"></i></a></li>
                 <li><a target="_blank" href="https://www.facebook.com/"><i class="icons fa fa-facebook"></i></a></li>
@@ -945,8 +959,8 @@
             <div class="footer-widget info-widget">
               <h2>Info</h2>
               <p class="first-par">You can contact or visit us during working time.</p>
-              <p><span>Tel: </span> 1234 - 5678 - 9012</p>
-              <p><span>Email: </span> support@finance.com</p>
+              <p><span>Tel: </span> 9811669606 / 9899120768</p>
+              <p><span>Email: </span> support@standupindias.com</p>
               <p><span>Working Hours: </span> 8:00 a.m - 17:00 a.m</p>
             </div>
           </div>
@@ -956,10 +970,10 @@
     <div class=" copyright">
       <div class="container ">
         <div class="pull-left">
-          <p class=""> &copy; Copyright "finance" 2016. All rights reserved. </p>
+          <p class=""> &copy; Copyright "Standup Indians" 2016. All rights reserved. </p>
         </div>
         <div class="pull-right">
-          <p class=""> Created By : Deepak Chandra </p>
+          <p class=""> Created By : Shatkon Labs Pvt. Ltd. </p>
         </div>
       </div>
     </div>
@@ -1020,5 +1034,30 @@
 <script type="text/javascript" src="js/jquery.themepunch.tools.min.js"></script> 
 <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script> 
 <script type="text/javascript" src="js/script.js"></script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/58a7d0d11919dc09f9f55b3d/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-92069432-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
 </body>
 </html>
