@@ -59,7 +59,7 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
           <a class="navbar-brand" href="index.html"><h1><img src="images/logo.png" height="80px" alt=""></a>
-            <span class="finewide_medium_white" style="color: white"> StandupIndians.com</span></h1></div>
+            <span class="finewide_medium_white" style="color: white"></span></h1></div>
         
         <!-- Collect the nav links, forms, and other content for toggling -->
         
@@ -73,7 +73,7 @@
                 <li><a href="404-error.html">Error 404 Page</a></li>
               </ul>-->
             </li>
-            <li class="drop"><a href="services.html">Our Services</a>
+            <!--<li class="drop"><a href="services.html">Our Services</a>
               <ul class="dropdown">
                 <li><a href="investment.html">Investment Planning</a></li>
                 <li><a href="retirement.html">Retirement Planning</a></li>
@@ -82,7 +82,7 @@
                 <li><a href="children.html">Children Planning </a></li>
                 <li><a href="mutual.html">Mutual Funds</a></li>
               </ul>
-            </li>
+            </li>-->
             <!--<li class="drop"><a href="shop-page.html">Shop</a>
               <ul class="dropdown">
                 <li><a href="product-details.html">Product Details</a></li>
@@ -103,7 +103,7 @@
                 <li><a href="single-post.html">Single Post</a></li>
               </ul>-->
             </li>
-            <li><a href="contact.html">Contact</a></li>
+            <!--<li><a href="contact.html">Contact</a></li>-->
             <li class="search drop"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
               <form class="form-search">
                 <input type="search" placeholder="Search:"/>
@@ -454,7 +454,7 @@
           <div class="tg-service services-content tg-haslayout col-md-4 ">
             <div class="tg-border-topleft tg-haslayout">
               <div class="tg-displaytable">
-                <div class="tg-displaytablecell"> <span class="icons"><img src="images/icon1.png" alt=""></span>
+                <div class="tg-displaytablecell"> <span class="icons"><img src="https://newsroom24x7.files.wordpress.com/2016/03/screenshot_2016-03-14-15-06-49-1.png"  style="max-height: 100px" alt=""></span>
                   <h3>MSME Registration : ( Micro,Small & Medium Enterprises )</h3>
                   <div class="tg-description">
                     <p>In India, SME’s aren’t aware of importance of getting themselves registered under MSME. It creates lots of opportunites & remain connected to various benefits provided by Ministry of MSME from time to time. </p>
@@ -467,7 +467,7 @@
           <div class="tg-service services-content tg-haslayout col-md-4">
             <div class="tg-border-topleft tg-haslayout">
               <div class="tg-displaytable">
-                <div class="tg-displaytablecell"> <span class="icons"><img src="images/icon2.png" alt=""></span>
+                <div class="tg-displaytablecell"> <span class="icons"><img src="http://2.wlimg.com/product_images/bc-full/dir_23/662151/nsic_p_1452129_250574.jpg" style="max-height: 100px" alt=""></span>
                   <h3>NSIC Or GP Registration  :  ( National Small Industries Corporation )</h3>
                   <div class="tg-description">
                     <p>NSIC helps MSME units in promoting, aiding and growing them at faster pace. They provides the below mentioned benefits</p>
@@ -480,7 +480,7 @@
           <div class="tg-service services-content tg-haslayout col-md-4">
             <div class="tg-border-topleft tg-haslayout">
               <div class="tg-displaytable">
-                <div class="tg-displaytablecell"> <span class="icons"><img src="images/icon3.png" alt=""></span>
+                <div class="tg-displaytablecell"> <span class="icons"><img src="https://www.standupmitra.in/Images/standuplogo.gif" style="max-height: 100px" alt=""></span>
                   <h3>StandUp Mitra Scheme</h3>
                   <div class="tg-description">
                     <p>It's a Dream Project of our Hon’ble Prime Minister of India Shri Narendra Modi wherein MSME’s can facilitates Bank loans between INR 10 Lac - 1Cr for setting up Green Field Enterprises. This Scheme is For Women Borrower with Minimum 51% stake Or Scheduled Caste (SC) Or Scheduled Tribes (ST).</p>
@@ -493,7 +493,7 @@
             <div class="tg-service services-content tg-haslayout col-md-4">
                 <div class="tg-border-topleft tg-haslayout">
                     <div class="tg-displaytable">
-                        <div class="tg-displaytablecell"> <span class="icons"><img src="images/icon2.png" alt=""></span>
+                        <div class="tg-displaytablecell"> <span class="icons"><img src="http://www.arkcloudcity.com/images/crisil-logo.jpg" style="max-height: 100px" alt=""></span>
                             <h3>CRISIL Rating</h3>
                             <div class="tg-description">
                                 <p>Crisil is India's No.1 Rating agent wherein Standard & Poor which is World No 1 Rating agency has 67% stake in it.</p>
@@ -679,7 +679,7 @@
 
 			================================================== -->
   
-  <section class="testimonial-section">
+ <!-- <section class="testimonial-section">
     <div class="container">
       <div class="col-md-6"> <img class="people-says" src="images/people-says-bg.png" alt="">
         <div class="project-title title"> <span class="sm-title">What people say?</span>
@@ -753,7 +753,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
   
   <!-- End testimonial section --> 
   
@@ -848,29 +848,26 @@
     <div class="container">
       <div class="project-title title"> <span class="sm-title">Trusted partners</span>
         <h2 class="box-header">OUR PARTNERS</h2>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-          
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>We work closely with partner below.</p>
       </div>
       <div class="row">
         <div class="textwidget">
           <div class="logo-panel">
             <div class="row">
+                <div class="col-xs-12 col-sm-1"></div>
                 <div class="col-xs-12 col-sm-2"><img src="images/ashok-stambh-english.png" alt="Client" height="98" width="208"></div>
                 <div class="col-xs-12 col-sm-2"><img src="images/ibalogo.png" alt="Client" height="98" width="208"></div>
                 <div class="col-xs-12 col-sm-2"><img src="images/mudra-logo.jpg" alt="Client" height="98" width="208"></div>
                 <div class="col-xs-12 col-sm-2"><img src="images/sidbiloanlogo.gif" alt="Client" height="98" width="208"></div>
                 <div class="col-xs-12 col-sm-2"><img src="images/standuplogo.gif" alt="Client" height="98" width="208"></div>
-              <div class="col-xs-12 col-sm-2"><img src="images/clients/client_01.jpg" alt="Client" height="98" width="208"></div>
+             <!-- <div class="col-xs-12 col-sm-2"><img src="images/clients/client_01.jpg" alt="Client" height="98" width="208"></div>
               <div class="col-xs-12 col-sm-2"><img src="images/clients/client_02.jpg" alt="Client" height="98" width="208"></div>
               <div class="col-xs-12 col-sm-2"><img src="images/clients/client_03.jpg" alt="Client" height="98" width="208"></div>
               <div class="col-xs-12 col-sm-2"><img src="images/clients/client_04.jpg" alt="Client" height="98" width="208"></div>
               <div class="col-xs-12 col-sm-2"><img src="images/clients/client_05.jpg" alt="Client" height="98" width="208"></div>
               <div class="col-xs-12 col-sm-2"><img src="images/clients/client_06.jpg" alt="Client" height="98" width="208"></div>
               <div class="col-xs-12 col-sm-2"><img src="images/ashok-stambh-english.png" alt="Client" height="98" width="208"></div>
-
+-->
               <!--<div class="col-xs-12 col-sm-2"><img src="images/clients/client_12.jpg" alt="Client" height="98" width="208"></div>-->
             </div>
           </div>
@@ -885,27 +882,27 @@
 
 			================================================== -->
   
-  <section class="pad-tb-40 callto-action">
+ <?php /* <section class="pad-tb-40 callto-action">
     <div class="container">
-      <div class="row"> 
-        
+      <div class="row">
+
         <!-- Column -->
-        
+
         <div class="col-sm-12">
           <div class="callto-action text-center">
             <h3 class=""><span class="call-title-text"><span class="call-title-text">Need a copy of this beautiful Html5 so what are you waiting?</span></span><a href="https://themeforest.net/checkout/13941544" class="button-one">Buy now</a></h3>
           </div>
         </div>
-        <!-- Column --> 
-        
+        <!-- Column -->
+
       </div>
-      <!-- row --> 
-      
+      <!-- row -->
+
     </div>
-    <!-- Container --> 
-    
+    <!-- Container -->
+
   </section>
-  
+  */?>
   <!-- footer 
 
 			================================================== -->
