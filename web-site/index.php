@@ -487,13 +487,7 @@
                     <input style="width: 100%"  ng-model="user.email" placeholder="Your email: *" type="text">
                 </div>
                     <div class="form-group col-md-6 custom-form">
-                        <select style="width: 100%" >
-                            <option selected="selected">Discussions with Financial Experts</option>
-                            <option>Meet Finance Assistant - PR Agency </option>
-                            <option>Discussions with Senior Finance Manager</option>
-                            <option>Designer</option>
-                            <option>Our CEO Finanace Theme Group</option>
-                        </select>
+                        <input style="width: 100%"   ng-model="user.designation" placeholder="Your Designation: *" type="text">
                     </div>
                     </div>
 
@@ -504,12 +498,22 @@
                     <input style="width: 100%" ng-model="user.company" placeholder="Company Name: *" type="text">
                 </div>
                 <div class="form-group col-md-6 custom-form">
-                    <input  style="width: 100%"  ng-model="user.company_type" placeholder="Company Type: *" type="text">
+
+                    <select style="width: 100%" ng-model="user.company_type">
+                    <option selected="selected" value="">Please Select Your Company Type</option>
+                    <option ng-repeat="type in companyTypes" value="{{type}}">{{type}}</option>
+
+                    </select>
                 </div>
 
 
                 <div class="form-group col-md-6 custom-form">
-                    <input style="width: 100%"  ng-model="user.industry" placeholder="Industry: *" type="text">
+
+                    <select style="width: 100%" ng-model="user.industry">
+                        <option selected="selected" value="">Please Select Your Industry Type</option>
+                        <option ng-repeat="industry in industries" value="{{industry}}">{{industry}}</option>
+
+                    </select>
                 </div>
                 <div class="form-group col-md-6 custom-form">
                     <input style="width: 100%"  ng-model="user.turnover" placeholder="Turnover in Lacs: *" type="text">
@@ -585,12 +589,36 @@
                     });
             }
         });
-        app.controller('formCtrl', function($scope) {
+        app.controller('formCtrl', function($scope, $http) {
+
+            function getIndustry() {
+                $scope.dataLoading = true;
+                $http.get("https://api.standupindians.com/industry")
+                    .then(function (response) {
+                        $scope.dataLoading = false;
+                        $scope.industries = response.data.industries;
+                        console.log(response);
+                    });
+            }
+
+            function getCompanyTypes() {
+                $scope.dataLoading = true;
+                $http.get("https://api.standupindians.com/company_type")
+                    .then(function (response) {
+                        $scope.dataLoading = false;
+                        $scope.companyTypes = response.data.company_type;
+                        console.log(response);
+                    });
+            }
+            getIndustry();
+            getCompanyTypes();
+
+            $scope.user= {};
 
 
-            $scope.create = function (user) {
-                console.log(user);
-                //return $http.post('https://api.standupindians.com/user', user).then(handleSuccess, handleError('Error creating user'));
+            $scope.create = function () {
+                console.log($scope.user);
+                return $http.post('https://api.standupindians.com/users', $scope.user).then(alert("Thank You! You have been Registered Successfully."), alert('Registration Failed!'));
             }
 
         });

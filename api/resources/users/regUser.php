@@ -22,15 +22,7 @@ function regUser(){
     $updateOTP = 'update users set mobile_otp = :sms_otp where id = :id';
 
 
-    if(!isset($requestJson->reg_username)){
-        $requestJson->reg_username = $requestJson->mobile;
-    }
     try {
-
-        if(
-            isset($requestJson->mobile)
-
-        ) {
 
             $db = getDB();
 
@@ -67,7 +59,7 @@ function regUser(){
 
             echo '{"results": ' . json_encode($requestJson) . '}';
 
-        }
+
 
     } catch (Exception $e) {
         $errorMessage = " Already Exists";
