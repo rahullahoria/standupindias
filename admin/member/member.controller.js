@@ -58,9 +58,28 @@
 
         function loadUser(){
             vm.inUser = UserService.GetInUser();
-            if(!vm.inUser.name)
+            if(!vm.inUser.id)
                 $location.path('/login');
             console.log("in user",vm.inUser);
+
+            CandidateService.GetCompanyTypes()
+                .then(function (response) {
+                    vm.companyTypes = response.company_type;
+
+
+
+
+                    console.log('inside controller',vm.companyType);
+                });
+            CandidateService.GetIndustries()
+                .then(function (response) {
+                    vm.industries = response.industries;
+
+
+
+
+                    console.log('inside controller',vm.industries);
+                });
 
 
         }
@@ -79,6 +98,23 @@
                     console.log('inside controller',vm.comments);
                 });
             $("#userModel").modal("show");
+        };
+        vm.nuser = {};
+        vm.create = function(){
+
+            CandidateService.Create(vm.nuser)
+                .then(function (response) {
+                    if(response.results.id){
+                        vm.nuser = {};
+                        alert("Added Successfully");
+                        //$("#userAddModel").modal("hide");
+                    }else {
+                        alert("Error: "+response.error);
+                    }
+
+                    console.log('inside controller',response);
+                });
+
         };
 
         vm.writeAboutUser = function(user){
