@@ -20,6 +20,7 @@ function regUser(){
 
 
     $updateOTP = 'update users set mobile_otp = :sms_otp where id = :id';
+    $d =date("Y-m-d H:i:s");
 
 
     try {
@@ -37,7 +38,7 @@ function regUser(){
             $stmt->bindParam("company_type", $requestJson->company_type);
             $stmt->bindParam("industry", $requestJson->industry);
             $stmt->bindParam("turnover", $requestJson->turnover);
-            $stmt->bindParam("creation", date("Y-m-d H:i:s"));
+            $stmt->bindParam("creation", $d);
 
             $stmt->execute();
 

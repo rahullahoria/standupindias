@@ -40,11 +40,11 @@
       <file leaf-file-name="regUser.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/users/regUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7593583">
-              <caret line="39" column="60" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.30481285">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
               <folding>
-                <marker date="1490351143620" expanded="true" signature="236:514" placeholder="INSERT INTO `users`... " />
-                <marker date="1490351143620" expanded="true" signature="537:590" placeholder="update users... " />
+                <marker date="1490351229496" expanded="true" signature="236:514" placeholder="INSERT INTO `users`... " />
+                <marker date="1490351229496" expanded="true" signature="537:590" placeholder="update users... " />
               </folding>
             </state>
           </provider>
@@ -467,7 +467,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490350934490</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="hi">
+      <created>1490351150717</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1490351150717</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -869,11 +875,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/users/regUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7593583">
-          <caret line="39" column="60" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.30481285">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
           <folding>
-            <marker date="1490351143620" expanded="true" signature="236:514" placeholder="INSERT INTO `users`... " />
-            <marker date="1490351143620" expanded="true" signature="537:590" placeholder="update users... " />
+            <marker date="1490351229496" expanded="true" signature="236:514" placeholder="INSERT INTO `users`... " />
+            <marker date="1490351229496" expanded="true" signature="537:590" placeholder="update users... " />
           </folding>
         </state>
       </provider>
