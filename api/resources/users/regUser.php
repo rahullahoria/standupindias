@@ -27,7 +27,7 @@ function regUser(){
             $db = getDB();
 
             $stmt = $db->prepare($sql);
-        var_dump($requestJson);
+        //var_dump($requestJson);
 
             $stmt->bindParam("full_name", $requestJson->full_name);
             $stmt->bindParam("designation", $requestJson->designation);
@@ -70,7 +70,7 @@ function regUser(){
         $flag = false;
         foreach($errors as $error){
             if (strpos($e->getMessage(), $error) !== false) {
-                echo '{"error":{"text":"' . $error.$errorMessage . '"}}';
+                echo '{"error":{"text":"' . $error.$errorMessage.'\nDetails'.$e->getMessage() . '"}}';
                 $flag = true;
             }
 
