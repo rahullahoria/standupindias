@@ -1,0 +1,339 @@
+﻿
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">ExamHans.com | Learn and Earn</a>
+        </div>
+        <!-- /.navbar-header -->
+        <ul class="nav navbar-top-links navbar-right">
+
+            <li>
+                <a href="#/member" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+            </li>
+            <!--<li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings </a>
+            </li>-->
+            <li class="divider"></li>
+            <li><a ng-click="vm.logout()"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+            </li>
+
+
+
+        </ul>
+
+
+
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+
+                    <li>
+                        <a href="#/member" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    </li>
+
+                   <!-- <li>
+                        <a href="#/employee/{{ vm.inUser.md5_id }}"><i class="fa fa-table fa-fw"></i> My Performance</a>
+                    </li>-->
+
+                    <!--<li>
+                        <a href="#"><i class="glyphicon glyphicon-cog fa-fw"></i> Settings</a>
+                    </li>-->
+                    <li>
+                        <a ng-click="vm.logout()"><i class="glyphicon glyphicon-off fa-fw"></i> Logout</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+    </nav>
+
+    <div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header"><a href="#/member" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a> > Result</h1>
+            </div>
+
+        </div>
+        <br/><!--
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="glyphicon glyphicon-king  fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <div class="huge">{{ vm.champs }}</div>
+                                <div>Champions</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a ng-click="vm.filterIt('primary')">
+                        <div class="panel-footer">
+                            <span class="pull-left">Select</span>
+                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-green">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="glyphicon glyphicon-knight fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <div class="huge">{{ vm.good }}</div>
+                                <div>Doing Good</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a ng-click="vm.filterIt('success')">
+                        <div class="panel-footer">
+                            <span class="pull-left">Select</span>
+                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-yellow">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="glyphicon glyphicon-bishop fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <div class="huge">{{ vm.improve }}</div>
+                                <div>Need Improvement</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a ng-click="vm.filterIt('warning')">
+                        <div class="panel-footer">
+                            <span class="pull-left">Select</span>
+                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-red">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="glyphicon glyphicon-pawn fa-5x"></i>
+                            </div>
+                            <div class="col-xs-9 text-right">
+                                <div class="huge">{{ vm.bad }}</div>
+                                <div>Bad Working Hours</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a ng-click="vm.filterIt('danger')">
+                        <div class="panel-footer">
+                            <span class="pull-left">Select</span>
+                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a ng-click="vm.filterIt('all')">See All</a>
+        </div>-->
+
+        <div class="row">
+            <h3 style="text-align: center;">Congratulations you have Earned {{vm.results.amount_made}} Rs</h3>
+            <div class="col-lg-6 col-md-offset-3">
+                <div style="text-align: center;">
+                    Please Like Us on Facebook <br><br>
+                    <div class="fb-like" data-href="https://www.facebook.com/Examhans-1449442445128231/" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+                    <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=235401549997398";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+
+                    <h3> To get your {{vm.results.amount_made}} Rs, Please Share</h3>
+                    <a href="http://www.facebook.com/sharer.php?u=http://examhans.com/story.php?t={{vm.testId}}" ng-click="vm.getBankAccount()" target="_blank">
+                        <img src="https://i.stack.imgur.com/br4Br.png" width="90px" alt="Facebook" /> & Add Account Details
+                    </a>
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="table-responsive">
+
+
+                    <table   class="table table-bordered table-hover table-striped" style="max-width: 99%;">
+                        <thead>
+                        <tr>
+                            <th>Field</th>
+                            <th>Value</th>
+
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr >
+
+
+                            <td><b>Total Questions</b></td>
+                            <td>{{vm.results.total_questions}}</td>
+
+
+                        </tr>
+
+
+                        <tr >
+
+
+                            <td><b>Answered</b></td>
+                            <td>{{vm.results.answered}}</td>
+
+
+                        </tr>
+
+                        <tr >
+
+
+                            <td><b>Correct</b></td>
+                            <td>{{vm.results.correct}}</td>
+
+
+                        </tr>
+                        <tr >
+
+
+                            <td><b>Wrong</b></td>
+                            <td>{{vm.results.wrong}}</td>
+
+
+                        </tr>
+                        <tr >
+
+
+                            <td><b>Earned</b></td>
+                            <td>{{vm.results.amount_made}} Rs</td>
+
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+
+
+
+            </div>
+
+                <br>
+                <br>
+                <a href="#/member" class="active"><i class="fa fa-dashboard fa-fw"></i>Go Home</a>
+
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<div id="bankDetailsModel" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Bank Account Details</h4>
+            </div>
+            <div class="modal-body">
+                <p>Need for the transfer of you amount</p>
+                <form role="form" ng-submit="vm.addAccount()" role="form">
+                    <fieldset>
+
+                        <div class="form-group" ng-class="{ 'has-error': form.account_holder_name.$dirty && form.account_holder_name.$error.required }">
+                            <input class="form-control" placeholder="Account Holder Name" type="text" name="account_holder_name" id="account_holder_name" ng-model="vm.account.account_holder_name" required >
+                            <span ng-show="form.account_holder_name.$dirty && form.account_holder_name.$error.required" class="help-block">Account Holder Name is required</span>
+                        </div>
+
+                        <div class="form-group" ng-class="{ 'has-error': form.account_number.$dirty && form.account_number.$error.required }">
+                            <input class="form-control" placeholder="Account No." type="number" name="account_number" id="account_number" ng-model="vm.account.account_number" required >
+                            <span ng-show="form.account_number.$dirty && form.account_number.$error.required" class="help-block">Account No is required</span>
+                        </div>
+
+                        <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
+                            <input class="form-control" placeholder="IfSC Code" type="text" name="ifsc_code" id="ifsc_code" ng-model="vm.account.ifsc_code" required >
+                            <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">IfSC is required</span>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-lg btn-primary btn-block">Add Account</button>
+                            <img ng-if="vm.dataLoadingReg" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+
+                        </div>
+
+                    </fieldset>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+<!--
+                <button type="button" class="btn btn-danger pull-left" ng-click="vm.startDemoTest()" data-dismiss="modal">Start Test</button>-->
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="thankyouModel" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Thank You</h4>
+            </div>
+            <div class="modal-body">
+                Thank You for checking our demo. <br>
+                Your amount will be credited in your account in next 24 hours
+
+            </div>
+            <div class="modal-footer">
+                <!--<button type="button" class="btn btn-default pull-left" data-dismiss="modal">No</button>-->
+                <a class="btn btn-danger pull-left" href="https://examhans.com/#plans">OK</a>
+            </div>
+        </div>
+
+    </div>
+</div>

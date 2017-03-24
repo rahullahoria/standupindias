@@ -15,13 +15,42 @@
 <link rel="stylesheet" type="text/css" href="css/owl.theme.css" media="screen">
 <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" media="screen">
 
+    <!-- for Google -->
+    <meta name="description" content="We help Startup, Companies to Get Funding. Let's Start Business|Grow Business|Scale Business" />
+    <meta name="keywords" content="Startup, Fund Raising, Govt. Funding, Business, Scale Business" />
+    <meta name="author" content="Rahul Lahoria" />
+    <meta name="copyright" content="true" />
+    <meta name="application-name" content="website" />
+
+    <!-- for Facebook -->
+    <meta property="og:title" content="We help Startup, Companies to Get Funding. Let's Start Business|Grow Business|Scale Business" />
+    <meta name="og:author" content="Rahul Lahoria" />
+    <meta property="og:type" content="website"/>
+
+    <meta name="p:domain_verify" content=""/>
+    <meta property="og:image" content='https://examhans.com/img/logos/examhans_logo.png' />
+    <meta property="og:url" content="https://standupindians.com/images/logo.png" />
+    <meta property="og:image:type" content="image/png" />
+
+    <meta property="og:description" content="We help Startup, Companies to Get Funding. Let's Start Business|Grow Business|Scale Business" />
+
+    <!-- for Twitter -->
+    <!-- <meta name="twitter:card" content="n/a" /> -->
+    <meta name="twitter:site" content="@standupindias">
+    <meta name="twitter:creator" content="@standupindias">
+    <meta name="twitter:url" content="https://www.standupindians.com" />
+    <meta name="twitter:title" content="Standup Indias|Start Business|Grow Business|Scale Business" />
+    <meta name="twitter:description" content="We help Startup, Companies to Get Funding. Let's Start Business|Grow Business|Scale Business" />
+    <meta name="twitter:image" content="https://standupindians.com/images/logo.png" />
+
 <!-- REVOLUTION BANNER CSS SETTINGS -->
 
 <link rel="stylesheet" type="text/css" href="css/settings.css" media="screen"/>
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 
-<body>
+<body ng-app="myApp">
 
 <!-- Container -->
 
@@ -436,6 +465,136 @@
       </div>
     </div>
   </section>
+
+
+    <section id="portfolio" class="bg-light-gray">
+        <hr>
+        <div class="col-md-4 col-md-offset-4"  ng-controller="formCtrl">
+
+
+
+                <div class="row">
+                    <h3>Register To Boost Your Business</h3>
+                    <p>Your Personal Details</p>
+                    <div class="form-group col-md-6 custom-form">
+                        <input style="width: 100%" id="names" ng-model="user.full_name" placeholder="Your Name: *" type="text">
+                    </div>
+                    <div class="form-group col-md-6 custom-form">
+                        <input style="width: 100%"  id="phone" ng-model="user.mobile" placeholder="Phone Number: *" type="text">
+                    </div>
+
+                <div class="form-group col-md-6 custom-form">
+                    <input style="width: 100%"  ng-model="user.email" placeholder="Your email: *" type="text">
+                </div>
+                    <div class="form-group col-md-6 custom-form">
+                        <select style="width: 100%" >
+                            <option selected="selected">Discussions with Financial Experts</option>
+                            <option>Meet Finance Assistant - PR Agency </option>
+                            <option>Discussions with Senior Finance Manager</option>
+                            <option>Designer</option>
+                            <option>Our CEO Finanace Theme Group</option>
+                        </select>
+                    </div>
+                    </div>
+
+            <div class="row">
+
+                <p>Company Details</p>
+                <div class="form-group col-md-6 custom-form">
+                    <input style="width: 100%" ng-model="user.company" placeholder="Company Name: *" type="text">
+                </div>
+                <div class="form-group col-md-6 custom-form">
+                    <input  style="width: 100%"  ng-model="user.company_type" placeholder="Company Type: *" type="text">
+                </div>
+
+
+                <div class="form-group col-md-6 custom-form">
+                    <input style="width: 100%"  ng-model="user.industry" placeholder="Industry: *" type="text">
+                </div>
+                <div class="form-group col-md-6 custom-form">
+                    <input style="width: 100%"  ng-model="user.turnover" placeholder="Turnover in Lacs: *" type="text">
+                </div>
+            </div>
+
+                <button type="submit" ng-click="create()" class="btn-success btn btn-submit">Submit</button>
+
+            <br/><br/> <hr>
+
+        </div>
+
+        <div class="container">
+            <div  ng-controller="myCtrl">
+
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading ">
+                            <button class="btn btn-warning btn-xl" ng-click="news = 'msme';getNews();"> MSME News</button>
+                            <button class="btn btn-warning btn-xl" ng-click="news = 'nsic';getNews();"> NSIC News</button>
+                            <button class="btn btn-warning btn-xl" ng-click="news = 'StandUp Mitra';getNews();"> StandUp Mitra News</button>
+                            <button class="btn btn-warning btn-xl" ng-click="news = 'CRISIL';getNews();"> CRISIL News</button>
+                        </h2>
+                        <h3 class="section-subheading text-muted">{{ news| uppercase }} News</h3>
+                        <img ng-if="dataLoading"
+                             src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 portfolio-item" ng-repeat="url in urls" style="height: 500px">
+                        <div class="blog-box">
+
+                            <div class="blog-post single-post">
+                                <img src="{{ url.img }}"  onerror="this.src='images/logo.png'" alt="" style="max-width: 100%;">
+                                <div class="post-content-text">
+
+                                    <h4><a href="{{ url.url }}">{{ url.title }}</a></h4>
+
+                                    <p>{{ url.description| limitTo: 150 }}..<a href="{{ url.url }}">read more</a></p>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+</div>
+</section>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope, $http) {
+            $scope.news = "msme";
+
+            $scope.getNews = getNews;
+            getNews();
+            function getNews() {
+                $scope.dataLoading = true;
+                $http.get("https://api.ragnar.shatkonlabs.com/search_keyword/" + $scope.news)
+                    .then(function (response) {
+                        $scope.dataLoading = false;
+                        $scope.urls = response.data.urls;
+                        console.log(response);
+                    });
+            }
+        });
+        app.controller('formCtrl', function($scope) {
+
+
+            $scope.create = function (user) {
+                console.log(user);
+                //return $http.post('https://api.standupindians.com/user', user).then(handleSuccess, handleError('Error creating user'));
+            }
+
+        });
+    </script>
   
   <!-- End home section --> 
   

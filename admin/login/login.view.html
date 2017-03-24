@@ -1,0 +1,259 @@
+﻿<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="http://examhans.com/">ExamHans</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="http://examhans.com/#services">How?</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="http://examhans.com/blog/">Blog</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="http://examhans.com/members/">Members</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="https://rahul372.typeform.com/to/Wq52n6">Enquiry</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="https://rahul372.typeform.com/to/Wq52n6">Survey</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="http://examhans.com/members/">Login/Register</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="http://examhans.com/#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<div class="container" style="overflow-y: hidden ! important;
+            overflow-x: hidden ! important;
+                    background-image: url('http://cdn.pcwallart.com/images/mute-swan-flying-wallpaper-4.jpg');
+                    background-size:cover;background-repeat: no-repeat;
+    background-position: top;">
+<div class="center" style="text-align: center;">
+
+
+</div>
+    <br>
+    <br>
+    <br>
+
+    <div class="row" ng-show="vm.showVerification" >
+        <div class="col-md-4 col-md-offset-4">
+            <br>
+            <br>
+            <br>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Verification</h3>
+                </div>
+                <div class="panel-body">
+
+                    <form role="form"  role="form">
+                        <fieldset>
+
+                            <div class="form-group" ng-hide="vm.user.sms_verified" ng-class="{ 'has-error': form.mobile_otp.$dirty && form.mobile_otp.$error.required }">
+                                {{  vm.inUser.mobile }}
+                                <input class="form-control" placeholder="Mobile OTP" type="text" name="mobile_otp" id="mobile_otp" ng-model="vm.user.sms_otp" required >
+                                <span ng-show="form.mobile_otp.$dirty && form.mobile_otp.$error.required" class="help-block">Mobile OTP is required</span>
+                                <a ng-click="vm.checkOTP('sms')" >Verify</a>
+                            </div>
+
+                            <br>
+                            <br>
+
+                            <!--<div class="form-group" ng-hide="vm.user.email_verified" ng-class="{ 'has-error': form.email_otp.$dirty && form.email_otp.$error.required }">
+                                {{  vm.inUser.email }}
+                                <input type="text" name="email_otp" placeholder="Email OTP" id="email_otp" class="form-control" ng-model="vm.user.email_otp"  />
+                                <span ng-show="form.email_otp.$dirty && form.email_otp.$error.required" class="help-block">Email OTP is required</span>
+                                <a ng-click="vm.checkOTP('email')" >Verify</a>
+                            </div>-->
+
+
+                            <br>
+                            <br>
+                            <br>
+                            <a ng-show="vm.user.sms_verified" ng-click="vm.checkOTP('skip')" >Start Test</a>
+
+                            <!--<div class="form-actions">
+                                <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-lg btn-primary btn-block">Login</button>
+                                <img ng-if="vm.dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+
+                            </div>-->
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="row" ng-hide="vm.showVerification" >
+    <div class="col-md-4 col-md-offset-4" ng-hide="vm.regR">
+        <br>
+        <br>
+        <br>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Login</h3>
+            </div>
+            <div class="panel-body">
+
+                <form role="form" ng-submit="vm.login()" role="form">
+                    <fieldset>
+
+                        <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
+                            <input class="form-control" placeholder="username" type="text" name="username" id="username" ng-model="vm.user.username" required >
+                            <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Email is required</span>
+                        </div>
+                        <div class="form-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+                            <input type="password" name="password" placeholder="Password" id="password" class="form-control" ng-model="vm.user.password" required />
+                            <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input name="remember" type="checkbox" value="Remember Me">Remember Me
+                            </label>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-lg btn-primary btn-block">Login</button>
+                            <img ng-if="vm.dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+
+                        </div>
+
+
+                    </fieldset>
+                </form>
+                <br>
+                <br>
+                <a href="https://examhans.com/members/#/?rt=demo" class="btn btn-warning" >Register</a>
+            </div>
+        </div>
+    </div>
+            <div class="col-md-4 col-md-offset-4" ng-show="vm.regR">
+
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Register For Demo</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" ng-submit="vm.reg()" role="form">
+                            <fieldset>
+                                <!--<div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
+                                    <input class="form-control" placeholder="Username" type="text" name="username" id="reg_username" ng-model="vm.user.reg_username" required autofocus>
+                                    <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username Name is required</span>
+                                </div>-->
+                                <!--<div class="form-group" ng-class="{ 'has-error': form.email_reg.$dirty && form.email_reg.$error.required }">
+                                    <input class="form-control" placeholder="E-mail" type="text" name="email" id="email_reg" ng-model="vm.user.email" required >
+                                    <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Email is required</span>
+                                </div>-->
+
+                                <div class="form-group" ng-class="{ 'has-error': form.mobile.$dirty && form.mobile.$error.required }">
+                                    <input class="form-control" placeholder="Mobile" type="text" name="mobile" id="mobile" ng-model="vm.user.mobile" required autofocus>
+                                    <span ng-show="form.mobile.$dirty && form.mobile.$error.required" class="help-block">Mobile No. Name is required</span>
+                                </div>
+
+
+
+                                <!--<div class="form-group" ng-class="{ 'has-error': form.password_reg.$dirty && form.password.$error.required }">
+                                    <input type="password" name="password" placeholder="Password" id="password_reg" class="form-control" ng-model="vm.user.reg_password" required />
+                                    <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+                                </div>-->
+                                <div class="form-group" ng-class="{ 'has-error': form.exam_id.$dirty && form.exam_id.$error.required }">
+                                    <select name="exam_id"  id="exam_id" class="form-control" ng-model="vm.user.exam_id" required>
+                                        <option value="" selected>Select Exam</option>
+                                        <option value="{{exam.id}}" ng-repeat="exam in vm.exams">{{exam.name}}</option>
+                                    </select>
+                                    <span ng-show="form.exam_id.$dirty && form.exam_id.$error.required" class="help-block">Exam is required</span>
+                                </div>
+
+                                <div class="form-group" ng-show="vm.user.ref_username == '' " ng-class="{ 'has-error': form.ref_username.$dirty && form.ref_username.$error.required }">
+                                    <input class="form-control" placeholder="refer username (optional)" type="text" name="ref_username" id="ref_username" ng-model="vm.user.ref_username" >
+                                    <span ng-show="form.ref_username.$dirty && form.ref_username.$error.required" class="help-block">refer username is required</span>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me" required>I Agree with <a href="#"> Terms & Conditions</a>
+                                    </label>
+                                </div>
+                                <div class="btn-danger" style="text-align: center">
+                                    {{ vm.regError }}
+                                </div>
+                                <br>
+                                <div class="form-actions">
+                                    <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-lg btn-success btn-block">Register
+                                    <img ng-if="vm.dataLoadingReg" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+                                    </button>
+                                </div>
+
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h4>
+            <i>
+                if you have any problem contact at info@shatkonlabs.com or Call at 9599075955
+            </i>
+        </h4>
+    </div>
+    </div>
+
+
+
+</div>
+
+<div id="instructionsModel" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Start Test Instructions</h4>
+            </div>
+            <div class="modal-body">
+                <div style="text-align: center">
+                <i class="fa fa-exclamation-triangle fa-3x btn-warning" aria-hidden="true"></i>
+                </div>
+                    <br>
+                <ol>
+                    <li>Correct Answer will pay you <b>5 Rs</b></li>
+                    <li>If you leave question unattempted that will pay you <b>1 Rs</b> </li>
+                    <li>Incorrect Answer will not pay you</li>
+                    <li>If you have founded coping, your session will be closed</li>
+                    <li>Saving questions is not allowed that may cause closing of your session</li>
+                    <li>Any random behaviour may also cause locking of your session</li>
+                </ol>
+
+                Note: If you start the test, you can't pause it!
+
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-danger pull-left" ng-click="vm.startDemoTest()" data-dismiss="modal">Start Test</button>
+            </div>
+        </div>
+
+    </div>
+</div>
