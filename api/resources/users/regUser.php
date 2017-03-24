@@ -27,6 +27,7 @@ function regUser(){
             $db = getDB();
 
             $stmt = $db->prepare($sql);
+        var_dump($requestJson);
 
             $stmt->bindParam("full_name", $requestJson->full_name);
             $stmt->bindParam("designation", $requestJson->designation);
@@ -39,7 +40,7 @@ function regUser(){
 
             $stmt->execute();
 
-        var_dump($requestJson);
+
 
 
             $requestJson->id = $db->lastInsertId();
