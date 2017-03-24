@@ -30,7 +30,7 @@
 
         function Auth(user) {
 
-            return $http.post('https://api.examhans.com/auth', user).then(handleSuccess, handleError('Error creating user'));
+            return $http.post('https://api.standupindians.com/auth', user).then(handleSuccess, handleError('Error creating user'));
         }
 
         // private functions

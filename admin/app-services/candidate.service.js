@@ -40,7 +40,7 @@
 
         function GetStatus() {
             return $http
-                .get('https://api.examhans.com/users')
+                .get('https://api.standupindians.com/users')
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 

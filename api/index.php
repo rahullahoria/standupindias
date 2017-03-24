@@ -21,6 +21,7 @@ require_once "resources/users/checkOtp.php";
 
 require_once "resources/company/getCompanyTypes.php";
 require_once "resources/industry/getIndustryTypes.php";
+require_once "resources/auth/postUserAuth.php";
 
 
 //app

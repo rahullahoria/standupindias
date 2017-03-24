@@ -25,6 +25,7 @@ $app->post('/users', 'regUser');
 
 $app->get('/company_type','getCompanyTypes');
 $app->get('/industry','getIndustryTypes');
+$app->post('/auth', 'userAuth');
 
 /* Ending Routes */
 
