@@ -14,9 +14,9 @@ function regUser(){
 
 
     $sql = "INSERT INTO `users`
-              (`full_name`, `designation`, `mobile`, `email`, `company`, `company_type`, `industry`, `turnover`)
+              (`full_name`, `designation`, `mobile`, `email`, `company`, `company_type`, `industry`, `turnover`, creation)
               VALUES
-              (:full_name, :designation, :mobile, :email, :company, :company_type, :industry, :turnover)";
+              (:full_name, :designation, :mobile, :email, :company, :company_type, :industry, :turnover,:creation)";
 
 
     $updateOTP = 'update users set mobile_otp = :sms_otp where id = :id';
@@ -37,6 +37,7 @@ function regUser(){
             $stmt->bindParam("company_type", $requestJson->company_type);
             $stmt->bindParam("industry", $requestJson->industry);
             $stmt->bindParam("turnover", $requestJson->turnover);
+            $stmt->bindParam("creation", date("Y-m-d H:i:s"));
 
             $stmt->execute();
 
