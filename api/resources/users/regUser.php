@@ -39,6 +39,8 @@ function regUser(){
 
             $stmt->execute();
 
+        var_dump($requestJson);
+
 
             $requestJson->id = $db->lastInsertId();
             if($requestJson->id){
