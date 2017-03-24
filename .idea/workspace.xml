@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="92821d99-a455-4994-8c45-0a1a9ac4c0a4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/industry/getIndustryTypes.php" afterPath="$PROJECT_DIR$/api/resources/industry/getIndustryTypes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/company/getCompanyTypes.php" afterPath="$PROJECT_DIR$/api/resources/company/getCompanyTypes.php" />
     </list>
     <ignored path="standupindias.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,14 +35,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getCompanyTypes.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="getCompanyTypes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/company/getCompanyTypes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.5187166">
+              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
               <folding>
                 <element signature="e#6#94#0#PHP" expanded="true" />
-                <marker date="1490334344824" expanded="true" signature="136:304" placeholder="SELECT SUBST... COLUMNS" />
+                <marker date="1490346721140" expanded="true" signature="136:304" placeholder="SELECT SUBST... COLUMNS" />
               </folding>
             </state>
           </provider>
@@ -68,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getIndustryTypes.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getIndustryTypes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/resources/industry/getIndustryTypes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49197862">
-              <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+            <state vertical-scroll-proportion="-12.125">
+              <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="36" selection-end-column="31" />
               <folding>
                 <element signature="e#6#94#0#PHP" expanded="true" />
                 <marker date="1490346658520" expanded="true" signature="358:522" placeholder="SELECT SUBST... COLUMNS" />
@@ -151,10 +151,10 @@
         <option value="$PROJECT_DIR$/api/resources/users/regUser.php" />
         <option value="$PROJECT_DIR$/api/resources/users/checkOtp.php" />
         <option value="$PROJECT_DIR$/web-site/index.php" />
-        <option value="$PROJECT_DIR$/api/resources/company/getCompanyTypes.php" />
         <option value="$PROJECT_DIR$/api/app.php" />
         <option value="$PROJECT_DIR$/api/index.php" />
         <option value="$PROJECT_DIR$/api/resources/industry/getIndustryTypes.php" />
+        <option value="$PROJECT_DIR$/api/resources/company/getCompanyTypes.php" />
       </list>
     </option>
   </component>
@@ -426,7 +426,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490345973140</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="hi">
+      <created>1490346666260</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1490346666260</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -489,7 +495,7 @@
           <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
-            <marker date="1490334344824" expanded="true" signature="136:304" placeholder="SELECT SUBST... COLUMNS" />
+            <marker date="1490346721140" expanded="true" signature="136:304" placeholder="SELECT SUBST... COLUMNS" />
           </folding>
         </state>
       </provider>
@@ -781,17 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/resources/company/getCompanyTypes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding>
-            <element signature="e#6#94#0#PHP" expanded="true" />
-            <marker date="1490334344824" expanded="true" signature="136:304" placeholder="SELECT SUBST... COLUMNS" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.25">
@@ -818,11 +813,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/industry/getIndustryTypes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49197862">
-          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        <state vertical-scroll-proportion="-12.125">
+          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="36" selection-end-column="31" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
             <marker date="1490346658520" expanded="true" signature="358:522" placeholder="SELECT SUBST... COLUMNS" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/resources/company/getCompanyTypes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5187166">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="e#6#94#0#PHP" expanded="true" />
+            <marker date="1490346721140" expanded="true" signature="136:304" placeholder="SELECT SUBST... COLUMNS" />
           </folding>
         </state>
       </provider>
