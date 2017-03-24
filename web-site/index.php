@@ -95,6 +95,8 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a class="active" href="index.html">Home</a> </li>
+            <li><a  href="#reg">Registor</a> </li>
+            <li><a  href="#news">News</a> </li>
             <li class="drop"><a href="team.html">About</a>
              <!-- <ul class="dropdown">
                 <li><a href="pricing.html">Pricing</a></li>
@@ -133,12 +135,12 @@
               </ul>-->
             </li>
             <!--<li><a href="contact.html">Contact</a></li>-->
-            <li class="search drop"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
+            <!--<li class="search drop"><a href="#" class="open-search"><i class="fa fa-search"></i></a>
               <form class="form-search">
                 <input type="search" placeholder="Search:"/>
                 <button type="submit"> <i class="fa fa-search"></i> </button>
               </form>
-            </li>
+            </li>-->
           </ul>
         </div>
         <!-- /.navbar-collapse --> 
@@ -155,7 +157,7 @@
 
 			================================================== -->
   
-  <section id="home-section" class="slider1"> 
+  <section id="home-section" class="slider1">
     
     <!--
 
@@ -467,109 +469,140 @@
   </section>
 
 
-    <section id="portfolio" class="bg-light-gray">
-        <hr>
-        <div class="col-md-4 col-md-offset-4"  ng-controller="formCtrl">
 
 
+<section id="reg" class="about-section" >
+    <div class="container">
+        <br>
+        <br>
+        <br><br>
+        <br>
+        <br><br>
+        <br>
+        <br>
+        <div class="row">
+        <div class="col-md-8 col-md-offset-2  ">
+            <div class="project-title title title2" style="text-align: center">
+                <h2 class="box-header ">Register To Boost Your Business</h2>
+            </div>
 
-                <div class="row">
-                    <h3>Register To Boost Your Business</h3>
-                    <p>Your Personal Details</p>
-                    <div class="form-group col-md-6 custom-form">
-                        <input style="width: 100%" id="names" ng-model="user.full_name" placeholder="Your Name: *" type="text">
-                    </div>
-                    <div class="form-group col-md-6 custom-form">
-                        <input style="width: 100%"  id="phone" ng-model="user.mobile" placeholder="Phone Number: *" type="text">
-                    </div>
+        </div>
+            <div class="col-md-2"></div>
+    <div class="col-md-5 col-md-offset-3"  ng-controller="formCtrl">
+        <form role="form" ng-submit="create()" role="form">
+        <div class="row " >
 
-                <div class="form-group col-md-6 custom-form">
-                    <input style="width: 100%"  ng-model="user.email" placeholder="Your email: *" type="text">
-                </div>
-                    <div class="form-group col-md-6 custom-form">
-                        <input style="width: 100%"   ng-model="user.designation" placeholder="Your Designation: *" type="text">
-                    </div>
-                    </div>
 
-            <div class="row">
+            <p class=" title2">Your Personal Details</p>
+            <div class="form-group col-md-6 custom-form">
+                <input style="width: 100%" id="names" ng-model="user.full_name" placeholder="Your Name: *" type="text" required>
+            </div>
+            <div class="form-group col-md-6 custom-form">
+                <input style="width: 100%"  id="phone" ng-model="user.mobile" placeholder="Phone Number: *" type="text" minlength="10" required>
+            </div>
 
-                <p>Company Details</p>
-                <div class="form-group col-md-6 custom-form">
-                    <input style="width: 100%" ng-model="user.company" placeholder="Company Name: *" type="text">
-                </div>
-                <div class="form-group col-md-6 custom-form">
+            <div class="form-group col-md-6 custom-form">
+                <input style="width: 100%"  ng-model="user.email" placeholder="Your email: *" type="email" required>
+            </div>
+            <div class="form-group col-md-6 custom-form">
+                <input style="width: 100%"   ng-model="user.designation" placeholder="Your Designation: *" type="text" required>
+            </div>
+        </div>
 
-                    <select style="width: 100%" ng-model="user.company_type">
-                    <option selected="selected" value="">Please Select Your Company Type</option>
+        <div class="row">
+
+            <p class="title2">Company Details</p>
+            <div class="form-group col-md-6 custom-form">
+                <input style="width: 100%" ng-model="user.company" placeholder="Company Name: *" type="text" required>
+            </div>
+            <div class="form-group col-md-6 custom-form">
+
+                <select ng-model="user.company_type" required>
+                    <option selected="selected" value="">Your Company Type</option>
                     <option ng-repeat="type in companyTypes" value="{{type}}">{{type}}</option>
 
-                    </select>
-                </div>
-
-
-                <div class="form-group col-md-6 custom-form">
-
-                    <select style="width: 100%" ng-model="user.industry">
-                        <option selected="selected" value="">Please Select Your Industry Type</option>
-                        <option ng-repeat="industry in industries" value="{{industry}}">{{industry}}</option>
-
-                    </select>
-                </div>
-                <div class="form-group col-md-6 custom-form">
-                    <input style="width: 100%"  ng-model="user.turnover" placeholder="Turnover in Lacs: *" type="text">
-                </div>
+                </select>
             </div>
+            </div><div class="row">
 
-                <button type="submit" ng-click="create()" class="btn-success btn btn-submit">Submit</button>
+            <div class="form-group col-md-6 custom-form">
+                <input style="width: 100%"  ng-model="user.turnover" placeholder="Turnover in Lacs: *" type="text" required>
+            </div>
+            <div class="form-group col-md-6 custom-form">
 
-            <br/><br/> <hr>
+                <select  ng-model="user.industry" required>
+                    <option selected="selected" value="">Your Industry Type</option>
+                    <option ng-repeat="industry in industries" value="{{industry}}">{{industry}}</option>
+
+                </select>
+            </div>
 
         </div>
 
-        <div class="container">
-            <div  ng-controller="myCtrl">
+        <button type="submit" class="btn-success btn btn-submit">Submit</button>
+</form>
+        <br/><br/>
+        <br/><br/>
+        <br/><br/>
 
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading ">
-                            <button class="btn btn-warning btn-xl" ng-click="news = 'msme';getNews();"> MSME News</button>
-                            <button class="btn btn-warning btn-xl" ng-click="news = 'nsic';getNews();"> NSIC News</button>
-                            <button class="btn btn-warning btn-xl" ng-click="news = 'StandUp Mitra';getNews();"> StandUp Mitra News</button>
-                            <button class="btn btn-warning btn-xl" ng-click="news = 'CRISIL';getNews();"> CRISIL News</button>
-                        </h2>
-                        <h3 class="section-subheading text-muted">{{ news| uppercase }} News</h3>
-                        <img ng-if="dataLoading"
-                             src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+    </div>
+        </div>
+        </div>
+</section>
 
-                    </div>
+<section id="news" class="bg-light-gray">
+
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <div class="container">
+        <div  ng-controller="myCtrl">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading ">
+                        <button class="btn btn-warning btn-xl" ng-click="news = 'msme';getNews();"> MSME News</button>
+                        <button class="btn btn-warning btn-xl" ng-click="news = 'nsic';getNews();"> NSIC News</button>
+                        <button class="btn btn-warning btn-xl" ng-click="news = 'StandUp Mitra';getNews();"> StandUp Mitra News</button>
+                        <button class="btn btn-warning btn-xl" ng-click="news = 'CRISIL';getNews();"> CRISIL News</button>
+                    </h2>
+                    <h2 class="box-header">{{ news| uppercase }} News</h2>
+
+                    <img ng-if="dataLoading"
+                         src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+
                 </div>
+            </div>
 
-                <div class="row">
-                    <div class="col-md-4 col-sm-6 portfolio-item" ng-repeat="url in urls" style="height: 500px">
-                        <div class="blog-box">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item" ng-repeat="url in urls" style="height: 500px">
+                    <div class="blog-box">
 
-                            <div class="blog-post single-post">
-                                <img src="{{ url.img }}"  onerror="this.src='images/logo.png'" alt="" style="max-width: 100%;">
-                                <div class="post-content-text">
+                        <div class="blog-post single-post">
+                            <img src="{{ url.img }}"  onerror="this.src='images/logo.png'" alt="" style="max-width: 100%;">
+                            <div class="post-content-text">
 
-                                    <h4><a href="{{ url.url }}">{{ url.title }}</a></h4>
+                                <h4><a href="{{ url.url }}">{{ url.title }}</a></h4>
 
-                                    <p>{{ url.description| limitTo: 150 }}..<a href="{{ url.url }}">read more</a></p>
+                                <p>{{ url.description| limitTo: 150 }}..<a href="{{ url.url }}">read more</a></p>
 
-                                </div>
                             </div>
-
-
                         </div>
 
-                    </div>
-                </div>
 
+                    </div>
+
+                </div>
             </div>
 
-
         </div>
-</div>
+
+
+    </div>
 </section>
 
     <script>
@@ -618,7 +651,18 @@
 
             $scope.create = function () {
                 console.log($scope.user);
-                return $http.post('https://api.standupindians.com/users', $scope.user).then(alert("Thank You! You have been Registered Successfully."), alert('Registration Failed!'));
+                return $http.post('https://api.standupindians.com/users', $scope.user)
+                    .then(function (response) {
+
+                        $scope.regUser = response.data.results;
+                        if($scope.regUser.id)
+                            alert("Thank You! You have been Registered Successfully.");
+                        else
+                            alert("Registration Failed!\n"+response.data.error);
+                        console.log(response);
+                    }
+
+                    );
             }
 
         });

@@ -48,7 +48,7 @@ function regUser(){
             $requestJson->id = $db->lastInsertId();
             if($requestJson->id){
                 $optSMS = getOTP();
-                $message = "Thank you for registring with ExamHans.com,\nyou Mobile OTP is\n".$optSMS;
+                $message = "$optSMS\nThank you for registring with www.StandupIndians.com,\nWe are thankful to be your Financial Advisers\n M.No. 9811669606 / 9899120768 ";
                 sendSMS($requestJson->mobile, $message);
 
 
