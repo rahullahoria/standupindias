@@ -32,8 +32,9 @@ WHERE TABLE_SCHEMA='standupindians'
         $stmt->execute();
         $in = $stmt->fetchAll(PDO::FETCH_OBJ);
         $str = $in[0]->str;
-        $str = rtrim(")",$str);
-        $str = ltrim("(",$str);
+        //var_dump($str);
+        $str = rtrim($str,")");
+        $str = ltrim($str,"(");
         $options = str_getcsv($str, ',', "'");
         $db = null;
 
