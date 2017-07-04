@@ -94,8 +94,8 @@
         
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a class="active" href="index.html">Home</a> </li>
-            <li><a  href="#reg">Registor</a> </li>
+            <li><a class="active" href="https://standupindians.com">Home</a> </li>
+            <li><a  href="#reg">Register</a> </li>
             <li><a  href="#news">News</a> </li>
             <li class="drop"><a href="team.html">About</a>
              <!-- <ul class="dropdown">
